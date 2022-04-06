@@ -1,0 +1,24 @@
+-- Haskell Playground 1.0
+--Function
+plus 1 1
+
+double 10
+
+quadruple 10
+
+factorial 10
+
+add (5, 8) --Tuple
+
+
+doubleSmallNumberPlus1 150
+doubleSmallNumberPlus1 30
+
+--add 3 3 --Error
+
+
+add3 = addC 3
+
+add3 10
+
+:t map

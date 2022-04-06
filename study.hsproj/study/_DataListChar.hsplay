@@ -1,0 +1,68 @@
+-- Haskell Playground 1.0
+-- ghci 에서 모듈 사용... 인데 왜 여기선 안되냐
+-- :module + Data.List Data.Char
+
+arr = [9,3,2,7]
+
+-- [a] -> a
+head arr
+last arr
+minimum arr
+maximum arr
+
+-- [a] -> [a]
+tail arr
+init arr
+reverse arr
+take 2 arr
+drop 2 arr
+[13,26..24*3]
+take 5 [13,26..] -- haskell은 기본적으로 lazy
+take 5 (cycle [1,2,3])
+take 5 (repeat 5) 
+
+boomBangs [7..13]
+
+take 5 [ (x, y) | x <- ['a'..'c'], y <- ['A'..'C']]
+
+-- x*2는 정의, x <- [1..10]는 입력 집합, x*2 >= 12는 술어(pred)
+[x*2 | x <- [1..10], x*2 >= 12] 
+
+[ x | x <- [10..20], x /= 13, x /= 15, x /= 19]
+
+
+[ x*y | x <- [2,5,10], y <- [8,10,11], x*y > 50]  
+
+
+let nouns = ["hobo","frog","pope"] 
+let adjectives = ["lazy","grouchy","scheming"]
+[adjective ++ " " ++ noun | adjective <- adjectives, noun <- nouns]
+removeNonUppercase "IdontLIKEFROGS" 
+
+numLength xs = sum [1 | _ <- xs]
+numLength [1,4,2]
+
+
+
+-- [a] -> Bool
+null []
+
+-- [a] -> Num
+sum arr
+
+st = [ c | c <- st, c `elem` ['A'..'Z']]
+
+:t minimum
+
+
+:t singleton
+:t uncons
+
+
+:t isLetter
+
+isLetter '1'
+isLetter 'a'
+
+:t 
+

@@ -1,0 +1,10 @@
+-- Haskell Playground 1.0
+-- ghci 에서 모듈 사용... 인데 왜 여기선 안되냐
+-- :module + Data.List Data.Char
+
+
+
+:t isLetter
+
+isLetter '1'
+isLetter 'a'

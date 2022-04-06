@@ -1,0 +1,75 @@
+-- Haskell Playground 1.0
+
+---- Boolean ----
+True 
+False
+True && False
+True || False
+not False
+not (True && True)
+
+5 == 5
+5 /= 5 --같지 않음은 /=
+
+---- Enum ----
+-- succ 열거형에서 다음 항목을 반환
+succ 8
+succ 'a'
+succ AA
+
+---- Number ----
+min 9 10
+min 4.2 6.7
+
+max 9 10
+max 4.2 6.7
+
+succ 9 + max 5 4 + 1  
+
+
+-- let을 사용하여 ghci에서 정의 가능
+let a = 10
+a
+
+:t (:)
+----- List, String ----
+[1,2,3,4] ++ [9,10,11,12] 
+"hello" ++ " " ++ "world"  
+['w','o'] ++ ['o','t']
+ -- 시작 부분에 넣음  
+'A':" SMALL CAT" 
+ -- [1,2,3]은 :1:2:3:[]에 대한 구문 설탕이다.
+[1,2,3]
+1:2:3:[]
+
+ -- index 목록에서 가져오기
+"Steve Buscemi" !! 6  
+[9.4,33.2,96.2,11.2,23.25] !! 1  
+
+-- elem 이라는 중위 함수가 있음(include)
+4 `elem` [5,2,3,1,4]
+10 `elem` [5,2,3,1,4]
+
+-- ..으로 range를 만들 수 있음
+['A' .. 'Z']
+[1..100]
+-- 구간 설정도 가능
+[7, 14 .. 50] 
+
+
+
+-- Type 찍을 수 있음.
+:t not
+:t add3
+
+divideByTen 200
+quicksort [5,1,9,4,6,7,3]
+
+:t divideByTen
+
+applyTwice divideByTen 30
+
+flip' zip [1,2,3,4,5] "hello"  
+zipWith (flip' div) [2,2..] [10,8,6,4,2]
+
+largestDivisible
