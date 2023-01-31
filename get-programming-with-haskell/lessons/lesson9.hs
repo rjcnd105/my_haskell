@@ -5,7 +5,6 @@ myReverse list = foldl reverseCons [] list
 
 
 
-
 -- foldl 구현
 myFoldl f init [] = init
 myFoldl f init (x:[]) = f init x
